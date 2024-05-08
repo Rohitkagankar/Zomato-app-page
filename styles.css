@@ -76,3 +76,44 @@
     width: 50%;
     border-radius: 10px;
 }
+.input_container_location{
+    width: 35%;
+    border-right: 2px solid #e0e0e0;
+}
+
+.input_container_search{
+    width: 65%;
+}
+
+
+/* Screen Size is from 0-600 i.e., smaller/mobile screen */
+@media only screen and (max-width: 600px){
+    .navbar__menu_container .user_icon{
+        display: flex;
+    }
+    .link{
+        display: none;
+    }
+    .hero__section{
+        min-height: 80vh;
+    }
+    .hero__section_container{
+        flex-direction: column;
+        background-color: transparent;
+        width: 100%;
+    }
+    .input_container_location,
+    .input_container_search{
+        padding: 18px;
+        border-radius: 10px;
+        width: 98%;
+    }
+    .hero__section_container{
+        height: calc(80vh - 40px);
+    }
+    .hero__section_title{
+        font-size: 18px;
+        width: 95%;
+    }
+
+}
